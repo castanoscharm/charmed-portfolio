@@ -319,8 +319,28 @@ export default function Home() {
     window.addEventListener("keydown", h); return () => window.removeEventListener("keydown", h);
   }, []);
   useEffect(() => {
-    document.body.style.overflow = activeProject ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    if (activeProject) {
+      const scrollY = window.scrollY;
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.left = "0";
+      document.body.style.right = "0";
+    } else {
+      const scrollY = document.body.style.top;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      if (scrollY) window.scrollTo(0, parseInt(scrollY || "0") * -1);
+    }
+    return () => {
+      const scrollY = document.body.style.top;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      if (scrollY) window.scrollTo(0, parseInt(scrollY || "0") * -1);
+    };
   }, [activeProject]);
 
   // 3D tilt on service cards
