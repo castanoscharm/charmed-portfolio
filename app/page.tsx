@@ -766,7 +766,8 @@ export default function Home() {
           .tst-title{margin-bottom:36px}
           .contact-section{padding:60px 20px}
           .contact-grid{grid-template-columns:1fr;gap:40px}
-          .contact-title{font-size:clamp(28px,7vw,40px)}
+          .contact-title{font-size:clamp(28px,7vw,40px);text-align:center}
+          .contact-intro{text-align:center}
           .contact-pick{font-size:16px;text-align:center}
           .contact-arrow{display:inline-block;animation-name:arrowBounceDown;transform:rotate(90deg)}
           @keyframes arrowBounceDown{0%,100%{transform:rotate(90deg) translateX(0)}50%{transform:rotate(90deg) translateX(8px)}}
