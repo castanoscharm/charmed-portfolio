@@ -660,7 +660,7 @@ export default function Home() {
         .wwm-cta:hover { transform:translateY(-2px); box-shadow:0 12px 32px rgba(51,10,10,0.4); border-color:rgba(168,64,64,0.5); }
 
         /* TESTIMONIALS */
-        .tst-section { width:100%; background:#0a0404; padding:80px 40px; text-align:center; }
+        .tst-section { width:100%; background:transparent; padding:80px 40px; text-align:center; }
         .tst-title { font-family:'Montserrat','Poppins',sans-serif; font-weight:900; font-size:clamp(28px,4vw,52px); color:#efefef; line-height:1.15; margin-bottom:56px; }
         .tst-title span { color:#c97a72; }
         .tst-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; max-width:900px; margin:0 auto; align-items:center; }
@@ -699,7 +699,7 @@ export default function Home() {
         .modal-divider { height:1px; background:var(--divider); margin:22px 0; }
 
         /* CONTACT */
-        .contact-section { width:100%; background:#0a0404; padding:80px 40px; }
+        .contact-section { width:100%; background:transparent; padding:80px 40px; }
         .contact-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:48px; max-width:1200px; margin:0 auto; align-items:center; }
         .contact-left { display:flex; flex-direction:column; gap:16px; }
         .contact-title { font-family:'Montserrat','Poppins',sans-serif; font-weight:900; font-size:clamp(28px,4vw,52px); color:#fff; line-height:1.15; margin-bottom:12px; }
