@@ -756,7 +756,42 @@ export default function Home() {
           .exp-inner{padding:36px var(--sp) 36px} .exp-cards{grid-template-columns:1fr}
           .proj-card-wrap{flex:0 0 280px;width:280px;height:380px}
           .wwm-grid{grid-template-columns:1fr;max-width:480px}
+          .wwm-section{padding:60px 20px}
+          .wwm-sub{font-size:16px;margin-bottom:32px}
+          .wwm-body{font-size:16px;line-height:1.9;max-width:100%}
+          .wwm-cta{font-size:15px;padding:16px 32px;letter-spacing:1px}
+          .tst-section{padding:60px 20px}
+          .tst-title{margin-bottom:36px}
+          .contact-section{padding:60px 20px}
+          .contact-grid{grid-template-columns:1fr;gap:40px}
+          .contact-title{font-size:clamp(28px,7vw,40px)}
+          .contact-pick{font-size:16px;text-align:center}
+          .contact-arrow{display:inline-block;animation-name:arrowBounceDown;transform:rotate(90deg)}
+          @keyframes arrowBounceDown{0%,100%{transform:rotate(90deg) translateX(0)}50%{transform:rotate(90deg) translateX(8px)}}
+          .contact-details{text-align:center;align-items:center}
+          .contact-socials{justify-content:center}
+          .contact-cal-wrap{padding:16px}
+          .contact-cal{height:580px}
+          .sol-btn{font-size:14px;padding:16px 28px;letter-spacing:0.2px}
+          .site-footer{padding:24px 20px}
           .modal-box{border-radius:20px} .modal-img{height:auto;border-radius:20px 20px 0 0} .modal-body{padding:20px 22px 24px}
+        }
+        @media(max-width:480px){
+          .cds-hero-stats{gap:12px}
+          .cds-hero-stat-num{font-size:18px}
+          .wwm-section{padding:48px 16px}
+          .wwm-title{font-size:clamp(24px,7vw,36px)}
+          .wwm-sub{font-size:15px}
+          .wwm-cta{font-size:14px;padding:14px 28px}
+          .tst-section{padding:48px 16px}
+          .tst-card{padding:28px 20px 22px}
+          .contact-section{padding:48px 16px}
+          .contact-intro{font-size:15px}
+          .contact-cal-wrap{padding:12px}
+          .contact-cal{height:520px}
+          .sol-btn{font-size:13px;padding:14px 24px}
+          .site-footer{padding:20px 16px}
+          .site-footer p{font-size:11px}
         }
       `}</style>
 
