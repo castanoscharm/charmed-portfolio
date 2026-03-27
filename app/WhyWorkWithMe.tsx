@@ -25,8 +25,8 @@ export default function WhyWorkWithMe() {
 
   useEffect(() => {
     const grid = gridRef.current;
-    const body = bodyRef.current;
-    const cta = ctaRef.current;
+    const body = bodyRef.current!;
+    const cta = ctaRef.current!;
     if (!grid || !body || !cta) return;
 
     const cardEls = Array.from(grid.querySelectorAll<HTMLElement>('.wwm-card'));
