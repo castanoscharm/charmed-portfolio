@@ -736,11 +736,12 @@ export default function Home() {
           .wwm-grid{grid-template-columns:repeat(2,1fr)}
         }
         @media(max-width:900px){
-          .sol-steps{flex-direction:column;align-items:center;gap:32px}
+          .sol-steps{flex-direction:column;align-items:center;gap:36px}
           .sol-line-track{display:none}
-          .sol-step{flex-direction:row;text-align:left;width:100%;max-width:420px;gap:18px}
-          .sol-step-icon-wrap{flex-shrink:0;margin-bottom:0}
-          .sol-step-desc{max-width:100%}
+          .sol-step{flex-direction:column;text-align:center;width:100%;max-width:360px;gap:0;padding:0 20px}
+          .sol-step-icon-wrap{margin-bottom:16px}
+          .sol-step-title{margin-bottom:8px}
+          .sol-step-desc{max-width:100%;font-size:13.5px;line-height:1.8}
           .cds-hero-stats{gap:20px} .cds-hero-stat-num{font-size:20px}
         }
         @media(max-width:820px){
