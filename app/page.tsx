@@ -400,9 +400,8 @@ export default function Home() {
           --mw: 1380px; --sp: 56px;
         }
 
-        body { font-family:'Poppins',sans-serif; min-height:100vh; color:var(--text-primary);
-          background: linear-gradient(180deg, #080101 0%, #0d0202 25%, #110202 50%, #0d0202 75%, #080101 100%);
-          background-attachment:fixed; }
+        html { background: linear-gradient(180deg, #080101 0%, #0d0202 25%, #110202 50%, #0d0202 75%, #080101 100%); background-attachment:fixed; }
+        body { font-family:'Poppins',sans-serif; min-height:100vh; color:var(--text-primary); }
 
         .grad-text { background:linear-gradient(110deg,#f0ebe8 0%,#e8c4bc 28%,#c9908a 52%,#a84040 72%,#330a0a 92%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; display:inline-block; }
 
