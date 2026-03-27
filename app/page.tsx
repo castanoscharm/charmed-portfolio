@@ -987,7 +987,7 @@ export default function Home() {
         <div className="contact-grid">
           <div className="contact-left">
             <h2 className="contact-title">It Starts <span>Here</span></h2>
-            <p className="contact-intro">Every automated business starts with one conversation. Yours is 30 minutes away.</p>
+            <p className="contact-intro">Every automated business starts with one conversation. Yours is 15 minutes away.</p>
             <p className="contact-pick">Pick a time that works for you <span className="contact-arrow">&rarr;</span></p>
 
             <div className="contact-details">
