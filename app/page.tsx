@@ -468,9 +468,6 @@ export default function Home() {
         .cds-hero-stat-divider { width:1px; height:40px; background:rgba(201,144,138,0.15); align-self:center; }
 
         /* Scroll indicator */
-        .cds-scroll-indicator { position:absolute; bottom:24px; left:50%; transform:translateX(-50%); z-index:5; display:flex; flex-direction:column; align-items:center; gap:8px; opacity:0; animation:slideUp 0.6s ease 0.7s forwards; }
-        .cds-scroll-line { width:1px; height:40px; background:rgba(201,144,138,0.3); animation:scrollPulse 2s ease-in-out infinite; }
-        .cds-scroll-label { font-size:9px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:rgba(201,144,138,0.4); }
         @keyframes scrollPulse { 0%,100%{ height:30px; opacity:0.3; } 50%{ height:50px; opacity:0.7; } }
 
         .section-divider { position:relative; width:100%; height:2px; overflow:visible; }
@@ -860,11 +857,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="cds-scroll-indicator">
-          <div className="cds-scroll-line" />
-          <span className="cds-scroll-label">Scroll</span>
-        </div>
       </section>
 
       <div className="section-divider" />
