@@ -775,6 +775,7 @@ export default function Home() {
           .contact-cal-wrap{padding:16px}
           .contact-cal{height:580px}
           .sol-btn{font-size:14px;padding:16px 28px;letter-spacing:0.2px}
+          .sol-btn-arrow{display:none}
           .site-footer{padding:24px 20px}
           .modal-box{border-radius:20px} .modal-img{height:auto;border-radius:20px 20px 0 0} .modal-body{padding:20px 22px 24px}
         }
@@ -958,7 +959,7 @@ export default function Home() {
             </div>
             <HowItWorksSteps steps={STEPS} />
             <div className="sol-cta">
-              <a href="#contact" className="sol-btn">📅 BOOK YOUR FREE DISCOVERY CALL →</a>
+              <a href="#contact" className="sol-btn">📅 BOOK YOUR FREE DISCOVERY CALL <span className="sol-btn-arrow">→</span></a>
               <p className="sol-cta-sub">15 min · No obligations · 100% free</p>
             </div>
           </div>
