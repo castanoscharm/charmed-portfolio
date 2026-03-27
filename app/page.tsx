@@ -384,8 +384,9 @@ export default function Home() {
           --mw: 1380px; --sp: 56px;
         }
 
-        html, body { background: linear-gradient(180deg, #080101 0%, #0d0202 25%, #110202 50%, #0d0202 75%, #080101 100%); background-attachment:fixed; }
-        body { font-family:'Poppins',sans-serif; min-height:100vh; color:var(--text-primary); }
+        body { font-family:'Poppins',sans-serif; min-height:100vh; color:var(--text-primary);
+          background: linear-gradient(180deg, #080101 0%, #0d0202 25%, #110202 50%, #0d0202 75%, #080101 100%);
+          background-attachment:fixed; }
 
         .grad-text { background:linear-gradient(110deg,#f0ebe8 0%,#e8c4bc 28%,#c9908a 52%,#a84040 72%,#330a0a 92%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; display:inline-block; }
 
@@ -677,7 +678,7 @@ export default function Home() {
           .tst-card--side.tst-card--visible{opacity:1;transform:scale(1)}
         }
 
-        .modal-backdrop { position:fixed; inset:0; z-index:1000; background:rgba(0,0,0,.85); display:flex; align-items:center; justify-content:center; padding:24px; animation:fadeIn 0.25s; }
+        .modal-backdrop { position:fixed; inset:0; z-index:1000; background:rgba(0,0,0,.6); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); display:flex; align-items:center; justify-content:center; padding:24px; animation:fadeIn 0.25s; }
         @keyframes fadeIn{from{opacity:0}to{opacity:1}}
         .modal-box { background:var(--modal-bg); border:1px solid var(--card-border); border-radius:28px; max-width:760px; width:100%; max-height:88vh; overflow-y:auto; box-shadow:0 24px 80px rgba(0,0,0,.4); animation:scaleIn 0.28s cubic-bezier(0.34,1.56,0.64,1); scrollbar-width:thin; scrollbar-color:var(--card-border) transparent; }
         @keyframes scaleIn{from{opacity:0;transform:scale(0.92)}to{opacity:1;transform:scale(1)}}
@@ -762,9 +763,7 @@ export default function Home() {
           .proj-card-wrap{flex:0 0 280px;width:280px;height:380px;transform-style:preserve-3d;-webkit-transform-style:preserve-3d}
           .proj-card:hover{transform:none;box-shadow:0 4px 24px 4px rgba(255,255,255,0.18);border-color:var(--card-border)}
           .proj-card-wrap.is-flipped .proj-back:hover{transform:rotateY(0deg)}
-          .sol-step-icon-wrap{backdrop-filter:none;-webkit-backdrop-filter:none}
-          .cds-btn-secondary{backdrop-filter:none;-webkit-backdrop-filter:none}
-          .contact-cal-wrap{backdrop-filter:none;-webkit-backdrop-filter:none;background:#0f0505}
+          .modal-backdrop{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(0,0,0,.85)}
           .wwm-grid{grid-template-columns:1fr;max-width:480px}
           .wwm-section{padding:60px 20px}
           .wwm-sub{font-size:16px;margin-bottom:32px}
