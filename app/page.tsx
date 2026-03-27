@@ -320,27 +320,11 @@ export default function Home() {
   }, []);
   useEffect(() => {
     if (activeProject) {
-      const scrollY = window.scrollY;
-      document.body.style.position = "fixed";
-      document.body.style.top = `-${scrollY}px`;
-      document.body.style.left = "0";
-      document.body.style.right = "0";
+      document.documentElement.style.overflow = "hidden";
     } else {
-      const scrollY = document.body.style.top;
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.left = "";
-      document.body.style.right = "";
-      if (scrollY) window.scrollTo(0, parseInt(scrollY || "0") * -1);
+      document.documentElement.style.overflow = "";
     }
-    return () => {
-      const scrollY = document.body.style.top;
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.left = "";
-      document.body.style.right = "";
-      if (scrollY) window.scrollTo(0, parseInt(scrollY || "0") * -1);
-    };
+    return () => { document.documentElement.style.overflow = ""; };
   }, [activeProject]);
 
   // 3D tilt on service cards
@@ -400,7 +384,7 @@ export default function Home() {
           --mw: 1380px; --sp: 56px;
         }
 
-        html { background: linear-gradient(180deg, #080101 0%, #0d0202 25%, #110202 50%, #0d0202 75%, #080101 100%); background-attachment:fixed; }
+        html, body { background: linear-gradient(180deg, #080101 0%, #0d0202 25%, #110202 50%, #0d0202 75%, #080101 100%); background-attachment:fixed; }
         body { font-family:'Poppins',sans-serif; min-height:100vh; color:var(--text-primary); }
 
         .grad-text { background:linear-gradient(110deg,#f0ebe8 0%,#e8c4bc 28%,#c9908a 52%,#a84040 72%,#330a0a 92%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; display:inline-block; }
