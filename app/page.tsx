@@ -138,7 +138,7 @@ function ProjectCard({ p, onOpen }: { p: Project; onOpen: (p: Project) => void }
     <div className={`proj-card-wrap${flipped ? " is-flipped" : ""}`}>
       <div className="proj-card proj-front" onClick={() => setFlipped(true)} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && setFlipped(true)}>
         <div className="proj-thumb">
-          <img src={p.screenshot} alt={p.title} loading="eager" />
+          <img src={p.screenshot} alt={p.title} loading="lazy" />
           <div className="proj-thumb-overlay" />
           <div className="proj-thumb-click">Click to flip &rarr;</div>
         </div>
@@ -674,7 +674,7 @@ export default function Home() {
           .tst-card--side.tst-card--visible{opacity:1;transform:scale(1)}
         }
 
-        .modal-backdrop { position:fixed; inset:0; z-index:1000; background:rgba(0,0,0,.6); backdrop-filter:blur(8px); display:flex; align-items:center; justify-content:center; padding:24px; animation:fadeIn 0.25s; }
+        .modal-backdrop { position:fixed; inset:0; z-index:1000; background:rgba(0,0,0,.85); display:flex; align-items:center; justify-content:center; padding:24px; animation:fadeIn 0.25s; }
         @keyframes fadeIn{from{opacity:0}to{opacity:1}}
         .modal-box { background:var(--modal-bg); border:1px solid var(--card-border); border-radius:28px; max-width:760px; width:100%; max-height:88vh; overflow-y:auto; box-shadow:0 24px 80px rgba(0,0,0,.4); animation:scaleIn 0.28s cubic-bezier(0.34,1.56,0.64,1); scrollbar-width:thin; scrollbar-color:var(--card-border) transparent; }
         @keyframes scaleIn{from{opacity:0;transform:scale(0.92)}to{opacity:1;transform:scale(1)}}
@@ -759,6 +759,9 @@ export default function Home() {
           .proj-card-wrap{flex:0 0 280px;width:280px;height:380px;transform-style:preserve-3d;-webkit-transform-style:preserve-3d}
           .proj-card:hover{transform:none;box-shadow:0 4px 24px 4px rgba(255,255,255,0.18);border-color:var(--card-border)}
           .proj-card-wrap.is-flipped .proj-back:hover{transform:rotateY(0deg)}
+          .sol-step-icon-wrap{backdrop-filter:none;-webkit-backdrop-filter:none}
+          .cds-btn-secondary{backdrop-filter:none;-webkit-backdrop-filter:none}
+          .contact-cal-wrap{backdrop-filter:none;-webkit-backdrop-filter:none;background:#0f0505}
           .wwm-grid{grid-template-columns:1fr;max-width:480px}
           .wwm-section{padding:60px 20px}
           .wwm-sub{font-size:16px;margin-bottom:32px}
@@ -780,7 +783,7 @@ export default function Home() {
           .sol-btn{font-size:14px;padding:16px 28px;letter-spacing:0.2px}
           .sol-btn-arrow{display:none}
           .site-footer{padding:24px 20px}
-          .modal-box{border-radius:20px} .modal-img{height:auto;border-radius:20px 20px 0 0} .modal-body{padding:20px 22px 24px}
+          .modal-box{border-radius:20px;max-height:80vh} .modal-img{max-height:200px;object-fit:cover;border-radius:20px 20px 0 0} .modal-body{padding:20px 22px 24px}
         }
         @media(max-width:480px){
           .cds-hero{min-height:100svh}
