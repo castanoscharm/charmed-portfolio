@@ -669,6 +669,7 @@ export default function Home() {
         .tst-card--side.tst-card--visible { opacity:0.75; transform:scale(0.95); }
         .tst-card--featured { border-color:rgba(255,255,255,0.15); }
         .tst-quote-mark { font-family:Georgia,serif; font-size:64px; line-height:1; color:#330a0a; display:block; margin-bottom:-8px; user-select:none; }
+        .tst-quote-close { text-align:right; margin-bottom:0; margin-top:-8px; }
         .tst-text { font-size:14.5px; color:#efefef; line-height:1.8; font-style:italic; font-weight:400; }
         .tst-divider { width:40px; height:1px; background:rgba(201,144,138,0.2); margin:20px 0 16px; }
         .tst-name { font-family:'Poppins',sans-serif; font-size:14px; font-weight:700; color:var(--text-secondary); }

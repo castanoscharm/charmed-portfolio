@@ -89,7 +89,8 @@ export default function Testimonials() {
             key={t.name}
           >
             <span className="tst-quote-mark">&ldquo;</span>
-            <p className="tst-text">{t.quote}{"\u201D"}</p>
+            <p className="tst-text">{t.quote}</p>
+            <span className="tst-quote-mark tst-quote-close">&rdquo;</span>
             <div className="tst-divider" />
             <p className="tst-name">{t.name}</p>
             <p className="tst-role">{t.role}</p>
