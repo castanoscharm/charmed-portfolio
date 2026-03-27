@@ -564,7 +564,7 @@ export default function Home() {
         @keyframes scrollLeft { from{transform:translateX(0)} to{transform:translateX(-50%)} }
         @keyframes scrollRight { from{transform:translateX(-50%)} to{transform:translateX(0)} }
         /* Flip card container */
-        .proj-card-wrap { flex:0 0 340px; width:340px; perspective:1200px; height:420px; position:relative; border-radius:20px; }
+        .proj-card-wrap { flex:0 0 340px; width:340px; perspective:1200px; height:420px; position:relative; border-radius:20px; transform-style:preserve-3d; -webkit-transform-style:preserve-3d; }
         .proj-card-wrap .proj-card { position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden; background:rgba(255,255,255,0.03); border:1px solid var(--card-border); border-radius:20px; overflow:hidden; transition:transform 0.6s ease,box-shadow 0.35s ease,border-color 0.35s ease; display:flex; flex-direction:column; cursor:pointer; box-shadow:0 4px 24px 4px rgba(255,255,255,0.18); }
         /* Shimmer sweep on hover */
         .proj-card-wrap .proj-card::before { content:''; position:absolute; inset:0; background:linear-gradient(to top,transparent 0%,rgba(180,40,40,0.1) 30%,rgba(232,196,188,0.06) 50%,transparent 70%); transform:translateY(100%); pointer-events:none; z-index:2; border-radius:20px; }
@@ -756,7 +756,9 @@ export default function Home() {
           .cds-btn-primary,.cds-btn-secondary{font-size:14px;padding:14px 26px}
           .exp-title{white-space:normal;font-size:clamp(20px,5vw,32px)}
           .exp-inner{padding:36px var(--sp) 36px} .exp-cards{grid-template-columns:1fr}
-          .proj-card-wrap{flex:0 0 280px;width:280px;height:380px}
+          .proj-card-wrap{flex:0 0 280px;width:280px;height:380px;transform-style:preserve-3d;-webkit-transform-style:preserve-3d}
+          .proj-card:hover{transform:none;box-shadow:0 4px 24px 4px rgba(255,255,255,0.18);border-color:var(--card-border)}
+          .proj-card-wrap.is-flipped .proj-back:hover{transform:rotateY(0deg)}
           .wwm-grid{grid-template-columns:1fr;max-width:480px}
           .wwm-section{padding:60px 20px}
           .wwm-sub{font-size:16px;margin-bottom:32px}
