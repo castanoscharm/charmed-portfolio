@@ -40,7 +40,7 @@ export default function WhyWorkWithMe() {
     }
 
     function startBreathing() {
-      if (cancelled) return;
+      if (cancelled || !cta) return;
       cta.animate(
         [
           { transform: 'scale(1)', boxShadow: '0 6px 24px rgba(51,10,10,0.3), 0 0 0px rgba(168,64,64,0)' },
@@ -52,7 +52,7 @@ export default function WhyWorkWithMe() {
     }
 
     function triggerShimmer() {
-      if (cancelled) return;
+      if (cancelled || !body) return;
 
       body.animate(
         [
