@@ -89,7 +89,7 @@ export default function Testimonials() {
             key={t.name}
           >
             <span className="tst-quote-mark">&ldquo;</span>
-            <p className="tst-text">{t.quote}</p>
+            <p className="tst-text">{t.quote}&rdquo;</p>
             <div className="tst-divider" />
             <p className="tst-name">{t.name}</p>
             <p className="tst-role">{t.role}</p>
