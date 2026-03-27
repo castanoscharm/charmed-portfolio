@@ -1,40 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --bg-light: radial-gradient(ellipse at 10% 10%, #c9908a 0%, transparent 45%),
-              radial-gradient(ellipse at 85% 85%, #d4a09a 0%, transparent 50%),
-              linear-gradient(160deg, #fdf0ed 0%, #fff8f6 40%, #f7ece8 100%);
-
-  --nav-bg: rgba(253, 240, 237, 0.82);
-  --card-bg: rgba(255, 255, 255, 0.55);
-  --card-border: rgba(180, 145, 140, 0.22);
-  --shadow: 0 8px 32px rgba(80, 20, 10, 0.10);
-  --shadow-hover: 0 16px 48px rgba(80, 20, 10, 0.18);
-  --text-primary: #1a0808;
-  --text-secondary: #3e2723;
-  --text-muted: #7a5550;
-  --accent: #330a0a;
-  --accent-teal: #0b3948;
-  --accent-light: #c9908a;
-  --btn-bg: #330a0a;
-  --btn-text: #efefef;
-  --btn2-border: rgba(62,39,35,0.45);
-  --btn2-text: #3e2723;
-  --toggle-bg: rgba(62,39,35,0.10);
-  --icon-bg: rgba(51,10,10,0.08);
-  --divider: rgba(180,145,140,0.3);
-  --ring-start: #330a0a;
-  --ring-mid: #0b3948;
-  --ring-end: #ccc5b9;
-  --photo-border: #fdf0ed;
-  --logo-main: #1a0808;
-  --logo-script: #3e2723;
-}
-
-[data-theme="dark"] {
-  --nav-bg: rgba(13, 2, 2, 0.86);
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --card-border: rgba(204,197,185,0.12);
+  --nav-bg: rgba(10, 2, 2, 0.92);
+  --card-bg: rgba(255, 255, 255, 0.045);
+  --card-border: rgba(201, 144, 138, 0.10);
   --shadow: 0 8px 32px rgba(0,0,0,0.45);
   --shadow-hover: 0 16px 48px rgba(0,0,0,0.65);
   --text-primary: #f0ebe8;
@@ -45,11 +14,11 @@
   --accent-light: #9b5f58;
   --btn-bg: #e8c4bc;
   --btn-text: #1a0808;
-  --btn2-border: rgba(204,197,185,0.4);
+  --btn2-border: rgba(201,144,138,0.3);
   --btn2-text: #ccc5b9;
-  --toggle-bg: rgba(204,197,185,0.12);
-  --icon-bg: rgba(232,196,188,0.10);
-  --divider: rgba(204,197,185,0.12);
+  --toggle-bg: rgba(201,144,138,0.08);
+  --icon-bg: rgba(201,144,138,0.08);
+  --divider: rgba(201,144,138,0.12);
   --ring-start: #e8c4bc;
   --ring-mid: #4db8d8;
   --ring-end: #3e2723;
@@ -72,19 +41,6 @@ body {
   font-family: var(--font-poppins), 'Poppins', sans-serif;
   min-height: 100vh;
   color: var(--text-primary);
-  transition: background 0.5s ease, color 0.4s ease;
-}
-
-html[data-theme="light"] body {
-  background: radial-gradient(ellipse at 10% 10%, #c9908a 0%, transparent 45%),
-              radial-gradient(ellipse at 85% 85%, #d4a09a 0%, transparent 50%),
-              linear-gradient(160deg, #fdf0ed 0%, #fff8f6 40%, #f7ece8 100%);
-}
-
-html[data-theme="dark"] body {
-  background: radial-gradient(ellipse at 5% 5%, #200808 0%, transparent 50%),
-              radial-gradient(ellipse at 90% 90%, #071820 0%, transparent 55%),
-              linear-gradient(160deg, #0d0202 0%, #150606 40%, #091420 100%);
 }
 
 @keyframes slideUp {
