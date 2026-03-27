@@ -738,10 +738,11 @@ export default function Home() {
         @media(max-width:900px){
           .sol-steps{flex-direction:column;align-items:center;gap:36px}
           .sol-line-track{display:none}
-          .sol-step{flex-direction:column;text-align:center;width:100%;max-width:360px;gap:0;padding:0 20px}
-          .sol-step-icon-wrap{margin-bottom:16px}
-          .sol-step-title{margin-bottom:8px}
-          .sol-step-desc{max-width:100%;font-size:13.5px;line-height:1.8}
+          .sol-step{flex:none;flex-direction:column;text-align:center;width:100%;max-width:320px;gap:0;padding:0 20px;align-items:center}
+          .sol-step-icon-wrap{margin-bottom:14px;flex-shrink:0}
+          .sol-step-label{margin-bottom:6px}
+          .sol-step-title{margin-bottom:8px;font-size:16px}
+          .sol-step-desc{max-width:100%;font-size:14px;line-height:1.8}
           .cds-hero-stats{gap:20px} .cds-hero-stat-num{font-size:20px}
         }
         @media(max-width:820px){
